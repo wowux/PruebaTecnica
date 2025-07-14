@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: API REST para suscripción a fondos - BTG Pactual
+Resources:
+  FundSubscriptionApi:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./app/
+      Handler: main.handler
+      Runtime: python3.12
+      MemorySize: 512
+      Timeout: 30
+      Tracing: Active
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: btg_subs
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /api/{proxy+}
+            Method: POST
