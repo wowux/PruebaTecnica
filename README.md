@@ -6,10 +6,10 @@ Este es un proyecto **backend** desarrollado como parte de una prueba técnica p
 
 ## 🧩 Funcionalidades Implementadas
 
-- ✅ **Suscribirse a un fondo**: Validación de saldo suficiente y deducción del monto.
-- ❌ **Cancelar una suscripción**: Reembolso del monto al usuario.
-- 📋 **Ver historial de transacciones**: Listado de todas las operaciones realizadas.
-- 📨 **Notificaciones**: Email o SMS según preferencia del usuario.
+-  **Suscribirse a un fondo**: Validación de saldo suficiente y deducción del monto.
+-  **Cancelar una suscripción**: Reembolso del monto al usuario.
+-  **Ver historial de transacciones**: Listado de todas las operaciones realizadas.
+-  **Notificaciones**: Email o SMS según preferencia del usuario.
 
 ---
 
@@ -161,12 +161,6 @@ Configura la URL de conexión en `app/database/db.py`.
 - CI/CD con GitHub Actions.
 - Pruebas de estrés y seguridad.
 - Soporte multi-tenant y más roles.
-
----
-
-## 📝 Licencia
-
-[MIT License](LICENSE)
 
 ---
 
